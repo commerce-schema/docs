@@ -4,48 +4,37 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Distrupting eCommerce Analytics',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Historically, eCommerce analytics has been a closed ecosystem.
+        Analytics platforms position themselves as "proprietary tech."
+        We believe that attribution and analytics is <i>just math</i>. We seek to disrupt this space
+        with open-source tools and strategies.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Building Together',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        As an open-source community with loosely-held shared conventions, we can work toghther
+        to advance data science and data-driven marketing for the broader eCommerce community.
+        Together, we all win.
       </>
     ),
-  },
-  {
-    title: 'Powered by Shit',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  }
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

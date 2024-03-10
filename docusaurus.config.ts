@@ -59,12 +59,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/commerce-schema.png',
     announcementBar: {
       id: 'hackathon-announcement',
       content:
-        'Join us on Friday, April 5th, in Boulder Colorado for our fist annual Open Source eCommerce Data Hackathon!',
+        'Join us on Friday, April 5th, in Boulder Colorado for our <a href="/docs/community/hackathons/boulder-hackaton-2024">first annual Open Source eCommerce Data Hackathon</a>!',
       backgroundColor: '#20232a',
       textColor: '#fff',
       isCloseable: false,
@@ -78,11 +77,10 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/commerce-schema',
           label: 'GitHub',
@@ -97,9 +95,9 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
-            },
+            }
           ],
         },
         {
@@ -107,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Slack',
-              href: 'https://join.slack.com/t/commerceschema/shared_invite/zt-2ecqw59ue-tbB9qEtrYHnQp~DH3nC5uQ',
+              href: '/docs/community/join-our-community',
             },
             {
               label: 'GitHub',
@@ -119,17 +117,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/commerce-schema',
-            },
+              label: 'About Us',
+              to: '/docs/about-us',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Commerce Schema.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Commerce Schema. Organized by <a href="https://fueled.io">Fueled</a>.`,
     },
     prism: {
       theme: prismThemes.github,

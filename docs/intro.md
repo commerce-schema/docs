@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-# Motivation for Commerce Schema
+# Why We Founded Commerce Schema
 
 ## Problem Statement
 
@@ -46,9 +47,3 @@ To get started, we need to:
 
 1. Agree to a handful of high-level specifications for working with eCommerce data.
 2. Once we have those specifications, we can begin to leverage tools like dbt, Google Datafold, and semantic layers (like Cube.dev) to transform, blend, and work with various sources of 1st-party and eCommerce data.
-
-## Q1 2024 Community Sprints & Working Groups
-
-[Working Group — Defining “Data Marts”](https://www.notion.so/Working-Group-Defining-Data-Marts-3f8ffbc7593145a587e267481542ead1?pvs=21)
-
-[Boulder Hackathon - April 5th, 2024](https://www.notion.so/Boulder-Hackathon-April-5th-2024-15b9b73bca374ec18180263fccc42ef9?pvs=21)
