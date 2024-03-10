@@ -7,6 +7,13 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
+import { Widget } from '@typeform/embed-react'
+
+
+function TypeformEmbed() {
+  return <Widget id="EYwxOuJo" className="my-form" />
+}
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -20,7 +27,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Docusaurus Tutorial - 6min ⏱️
           </Link>
         </div>
       </div>
@@ -36,6 +43,7 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <TypeformEmbed />
         <HomepageFeatures />
       </main>
     </Layout>

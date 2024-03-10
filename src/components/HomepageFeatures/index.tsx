@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Shit',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

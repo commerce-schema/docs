@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     orders ||--o{ order_line_items : "1..*"
     order_line_items ||--o{ product_listings : "1..*"
@@ -269,8 +270,5 @@ erDiagram
         datetime product_supplier_created_datetime
         datetime product_supplier_last_modified_datetime
     }
-
-
-
-
+```
 

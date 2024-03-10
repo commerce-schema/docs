@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Commerce Schema',
+  tagline: 'A shared vocabulary and approach building interoperable eCommerce data tools.',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://commerce-schema.org',
@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/commerce-schema/docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/commerce-schema/docs',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,10 +57,18 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    announcementBar: {
+      id: 'hackathon-announcement',
+      content:
+        'Join us on Friday, April 5th, in Boulder Colorado for our fist annual Open Source eCommerce Data Hackathon!',
+      backgroundColor: '#20232a',
+      textColor: '#fff',
+      isCloseable: false,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Commerce Schema',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Commere Schema',
         src: 'img/logo.svg',
       },
       items: [
@@ -72,7 +80,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/commerce-schema',
           label: 'GitHub',
           position: 'right',
         },
@@ -94,16 +102,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Slack',
+              href: 'https://join.slack.com/t/commerceschema/shared_invite/zt-2ecqw59ue-tbB9qEtrYHnQp~DH3nC5uQ',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/commerce-schema',
             },
           ],
         },
@@ -116,12 +120,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/commerce-schema',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Commerce Schema.`,
     },
     prism: {
       theme: prismThemes.github,
