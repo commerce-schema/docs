@@ -14,7 +14,7 @@ We are committed to maintaining the spirit of this community, and have written t
 ### Rule 1: Be respectful
 We want everyone in this community to have a fulfilling and positive experience. Therefore, this first rule is serious and straightforward; we simply will not tolerate disrespectful behavior of any kind.
 
-Everyone interacting in the Commerce Schema community – including Slack, the forum, codebase, issue trackers, mailing lists, and hackathon events – is expected to follow the [Community Code of Conduct](/community/resources/code-of-conduct). If you are unable to abide by the code of conduct set forth here, we encourage you not to participate in the community.
+Everyone interacting in the Commerce Schema community – including Slack, the forum, codebase, issue trackers, mailing lists, and hackathon events – is expected to follow the [Community Code of Conduct](/docs/community/community-guidelines/code-of-conduct). If you are unable to abide by the code of conduct set forth here, we encourage you not to participate in the community.
 
 ### Rule 2: Keep it in public spaces
 Unless you have someone's express permission to contact them directly, do not directly message other community members, whether on a Commerce Schema Community platform or other spaces like LinkedIn.
