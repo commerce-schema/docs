@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Commerce Schema',
+  tagline: 'A shared vocabulary and approach building interoperable eCommerce data tools.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -33,19 +33,23 @@ const config: Config = {
     [
       'classic',
       {
+        gtag: {
+          trackingID: 'G-1FRK8SWKC2',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/commerce-schema/docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/commerce-schema/docs',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -55,24 +59,30 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/commerce-schema.png',
+    announcementBar: {
+      id: 'hackathon-announcement',
+      content:
+        'Join us on Friday, April 5th, in Boulder Colorado for our <a href="/docs/community/hackathons/boulder-hackaton-2024">first annual Open Source eCommerce Data Hackathon</a>!',
+      backgroundColor: '#20232a',
+      textColor: '#fff',
+      isCloseable: false,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Commerce Schema',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Commere Schema',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/commerce-schema',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,25 +95,21 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
-            },
+            }
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Slack',
+              href: '/docs/community/join-our-community',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/commerce-schema',
             },
           ],
         },
@@ -111,17 +117,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              label: 'About Us',
+              to: '/docs/about-us',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Commerce Schema. Organized by <a href="https://fueled.io">Fueled</a>.`,
     },
     prism: {
       theme: prismThemes.github,
